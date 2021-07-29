@@ -1,0 +1,131 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10373950600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to patient grid",
+            "match": {
+              "location": "SD_PatientGrid.I_navigate_to_patient_grid()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 18916611200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Browser()"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Search Patient Using MRN From Patient Grid",
+        "description": "",
+        "id": "search-patient;search-patient-using-mrn-from-patient-grid;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 10970552800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SD_Login.Logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18991689200,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I search PE05E6ECEF0E46443B887BA108B24D9049 using global search",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PE05E6ECEF0E46443B887BA108B24D9049",
+                  "offset": 9
+                }
+              ],
+              "location": "SD_SearchPatient.search_Patient(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 654909100,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I should see ADam, Tom as patient with PE05E6ECEF0E46443B887BA108B24D9049 as MRN and 02/02/2000 as DOB and Active as Status on patient grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "ADam, Tom",
+                  "offset": 13
+                },
+                {
+                  "val": "PE05E6ECEF0E46443B887BA108B24D9049",
+                  "offset": 39
+                },
+                {
+                  "val": "02/02/2000",
+                  "offset": 85
+                },
+                {
+                  "val": "Active",
+                  "offset": 107
+                }
+              ],
+              "location": "SD_SearchPatient.Patient_should_be_verified(String,String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PatientGrid"
+          },
+          {
+            "name": "@SearchByMRN"
+          }
+        ]
+      }
+    ],
+    "name": "Search Patient",
+    "description": "",
+    "id": "search-patient",
+    "keyword": "Feature",
+    "uri": "Include/features/PatientGrid/SearchPatient.feature",
+    "tags": [
+      {
+        "name": "@PatientGrid",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
