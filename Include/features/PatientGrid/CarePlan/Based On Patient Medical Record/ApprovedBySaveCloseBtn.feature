@@ -30,7 +30,7 @@ Feature: Care Plan - Approved Using SaveClose Button
 
     Examples: 
       | Patient          | Title           | New Status | Draft Status | Approved Status | SucessMessage                           |
-      | BABCOX, MICHAEL | ApprovedPatient | New        | Draft        | Approved        | successCare Plan Saved SuccessfullyHide |
+      | LAIRD, MICHAEL | ApprovedPatient | New        | Draft        | Approved        | successCare Plan Saved SuccessfullyHide |
     
     #Examples: 
       #| Patient          | Title           | New Status | Draft Status | Approved Status | Patient_Name     | MRN                | DOB             | LOB                 | Enterprise | SucessMessage                           |
