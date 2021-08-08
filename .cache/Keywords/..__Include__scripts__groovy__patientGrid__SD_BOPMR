@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "6AC549F565002CD390855C42A643E65F",
+  "keywordFileContentHash": "BE2FB3223B8E9A79B2E0B471B1FEBDB2",
   "keywordClasses": [
     {
       "name": "patientGrid.SD_BOPMR",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

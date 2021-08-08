@@ -18,7 +18,7 @@ Feature: Scheduled Left Filters flow
 
     Examples: 
       | Patient          | Reason    |
-      | BABCOX, MICHAEL | Back pain |
+      | LAIRD, MICHAEL | Back pain |
 
 @SmokeUSMM_VerifyVisitTypeFilter
   Scenario Outline: Verify Visit Type Filters
@@ -30,7 +30,7 @@ Feature: Scheduled Left Filters flow
 
     Examples: 
       | VisitType  |
-      | Telehealth |
+      | Office Visit |
 
 @SmokeUSMM_VerifyProviderFilter
   Scenario Outline: Verify Appoitnment Provider Filters
@@ -53,7 +53,7 @@ Feature: Scheduled Left Filters flow
     
     Examples: 
       | Patient          | 
-      | BABCOX, MICHAEL |
+      | LAIRD, MICHAEL |
 
 @SmokeUSMM_VerifyDataFromExcel
   Scenario: Verify That Patient From Excel

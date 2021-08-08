@@ -1,3 +1,24 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/TelephonicOutreach/Page_Welcome to Persivia/Obj_OfficeLocationSelecttion",
+      "brokenLocator": "(//li[contains(text(), \u0027Telehealth Test\u0027)])",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Support Test Fac\u0027])[2]/preceding::li[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/TelephonicOutreach/Page_Welcome to Persivia/Obj_OfficeLocationSelecttion_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_HomePage/Obj_SelectUSMedicalManagementACO",
+      "brokenLocator": "//option[contains(text(),\u0027US Medical Management ACO\u0027)]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//select[@id\u003d\u0027selectedEnterprise\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_HomePage/Obj_SelectUSMedicalManagementACO_attributes.png"
+    }
+  ]
 }

@@ -10,8 +10,8 @@ Feature: Search Patient
     Then I should see <Patient_Name> as patient Name
 
     Examples: 
-      | Patient      | Patient_Name | MRN           | DOB        | Patient_Status |
-      | TRUONG, DU D | TRUONG, DU D | EFU9113150401 | 05/27/1950 | Active         |
+      | Patient        | Patient_Name   | MRN           | DOB        | Patient_Status |
+      | LAIRD, MICHAEL | LAIRD, MICHAEL | EFU9113150401 | 05/27/1950 | Active         |
 
   @SearchByFirstName
   Scenario Outline: Search Patient Using First Name From Patient Grid
@@ -20,8 +20,8 @@ Feature: Search Patient
     Then I should see <Patient_Name> as patient Name
 
     Examples: 
-      | Patient | Patient_Name | MRN           | DOB        | Patient_Status |
-      | DU D    | TRUONG, DU D | EFU9113150401 | 05/27/1950 | Active         |
+      | Patient | Patient_Name   | MRN           | DOB        | Patient_Status |
+      | MICHAEL | LAIRD, MICHAEL | EFU9113150401 | 05/27/1950 | Active         |
 
   @SearchByLastNameANDFirstName
   Scenario Outline: Search Patient Using Last and First Name From Patient Grid
@@ -29,8 +29,8 @@ Feature: Search Patient
     Then I should see <Patient_Name> as patient Name
 
     Examples: 
-      | Patient     | Patient_Name | MRN           | DOB        | Patient_Status |
-      | DU D TRUONG | TRUONG, DU D | EFU9113150401 | 05/27/1950 | Active         |
+      | Patient       | Patient_Name   | MRN           | DOB        | Patient_Status |
+      | MICHAEL LAIRD | LAIRD, MICHAEL | EFU9113150401 | 05/27/1950 | Active         |
 
   @SearchByLastName
   Scenario Outline: Search Patient Using Last Name From Patient Grid
@@ -38,8 +38,8 @@ Feature: Search Patient
     Then I should see <Patient_Name> as patient Name
 
     Examples: 
-      | Patient | Patient_Name | MRN           | DOB        | Patient_Status |
-      | TRUONG  | TRUONG, DU D | EFU9113150401 | 05/27/1950 | Active         |
+      | Patient | Patient_Name   | MRN           | DOB        | Patient_Status |
+      | LAIRD   | LAIRD, MICHAEL | EFU9113150401 | 05/27/1950 | Active         |
 
   @SearchByMRN
   Scenario Outline: Search Patient Using MRN From Patient Grid
@@ -47,5 +47,5 @@ Feature: Search Patient
     Then I should see <Patient_Name> as patient Name
 
     Examples: 
-      | Patient       | Patient_Name | MRN           | DOB        | Patient_Status |
-      | EFU9113150401 | TRUONG, DU D | EFU9113150401 | 05/27/1950 | Active         |
+      | Patient       | Patient_Name   | MRN           | DOB        | Patient_Status |
+      | 534247 | LAIRD, MICHAEL | EFU9113150401 | 05/27/1950 | Active         |

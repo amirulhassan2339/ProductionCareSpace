@@ -6,12 +6,12 @@
    <elementGuidId>0316ee48-0af1-4e33-9653-704bfaf597fc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@id='tocGrid']//table)[2]//tr[1]//td[7]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>td.program.k-state-border-down</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//div[@id='tocGrid']//table)[2]//tr[1]//td[6]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

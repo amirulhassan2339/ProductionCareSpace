@@ -24,23 +24,23 @@ public class SD_PatientGrid_CareCoordination {
 
 
 
-		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'), 10)
-		WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'))
+//		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'), 10)
+//		WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'))
+//
+//		
+//
+//			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectUSMedicalManagementACO'))
+//	
+
+
+
 
 		
-
-			WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectUSMedicalManagementACO'))
-	
-
-
-
-
+				WebUI.waitForElementClickable(findTestObject('OR_HomePage/Obj_QAmhpn'), 2)
+		
+		//		'Select Support Test Ent Enterprise'
+				WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
 		//
-		//		WebUI.waitForElementClickable(findTestObject('OR_HomePage/Obj_QAmhpn'), 2)
-		////
-		////		'Select Support Test Ent Enterprise'
-		//		WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_SelectSupportTestEnt'))
-		////
 		//
 		////		'Aprima Enterprise'
 		//		WebUI.click(findTestObject('OR_HomePage/Obj_AprimaEnterprise'))
