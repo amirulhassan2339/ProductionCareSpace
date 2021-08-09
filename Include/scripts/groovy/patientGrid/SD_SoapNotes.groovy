@@ -30,7 +30,7 @@ class SD_SoapNotes {
 	@And("I double click on screen to add appointment")
 	public void I_double_click_on_screen_to_add_appointment() {
 
-		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_DoubleClick_ScheduleAppointment'), 20)
+		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_DoubleClick_ScheduleAppointment'), 30)
 
 		WebUI.doubleClick(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_DoubleClick_ScheduleAppointment'))
 		Thread.sleep(3000)
@@ -686,16 +686,14 @@ class SD_SoapNotes {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_SaveCloseBTN_SOAPNote'))
 
-		Thread.sleep(4000)
+		Thread.sleep(3000)
 
 		//WebUI.click(findTestObject('Object Repository/OR_Alert/Obj_Hide'))
-
 
 	}
 
 	@Then("I should see soap note saved message")
 	public void I_should_see_save_notes_message() {
-
 
 		String Actual_Message = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_SOAPNoteSaved_Message'))
 

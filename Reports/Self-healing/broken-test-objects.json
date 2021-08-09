@@ -19,6 +19,26 @@
       "proposedLocatorMethod": "XPATH",
       "recoveryMethod": "XPATH",
       "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_HomePage/Obj_SelectUSMedicalManagementACO_attributes.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid/Obj_Name",
+      "brokenLocator": "//div[contains(@id, \u0027carePlanPatientInfoDiv\u0027)]/div[1]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Reject\u0027])[1]/following::div[6]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid/Obj_Name_neighbor.png"
+    },
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/OR_PatientGrid/OR_LeftFilters/GridObjects/Obj_MHPN",
+      "brokenLocator": "(//div[@id\u003d\u0027patient-grid\u0027]//div)[4]//tr[1]//td[12]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div[@id\u003d\u0027patient-grid\u0027]/div[3]/table/tbody/tr/td[12]/span",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/OR_PatientGrid/OR_LeftFilters/GridObjects/Obj_MHPN_idRelative.png"
     }
   ]
 }

@@ -78,7 +78,7 @@ class SD_CareCordination_LeftFilters {
 
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_buttonApply'))
 
-		Thread.sleep(3000)
+		Thread.sleep(14000)
 	}
 
 
@@ -178,7 +178,7 @@ class SD_CareCordination_LeftFilters {
 
 
 
-		if(NotificationType== 'Presenting') {
+		if(NotificationType== 'Admitted') {
 
 			Thread.sleep(2000)
 			WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/OR_NotificationType/Obj_NotificationType_Select'))

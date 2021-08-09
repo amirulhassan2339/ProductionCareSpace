@@ -17,11 +17,10 @@ Feature: Soap Note Creation from Schedule flow
     Then I should see appointment success message
 
     Examples: 
-      | Patient          | Reason    |
+      | Patient        | Reason    |
       | LAIRD, MICHAEL | Back pain |
 
-@Smoke_USMM_CreateLabResults
-
+  @Smoke_USMM_CreateLabResults
   Scenario Outline: Verify Creating Lab Results - Based On Patient's Medical Record
     When I click on schedule tab
     Then I should see already scheduled appointment
@@ -33,7 +32,6 @@ Feature: Soap Note Creation from Schedule flow
     * I click on add Lab Results plus button
     And I enter <LabResults> as lab results in search and select analyte
     * I click on lab resutls OK button
-
     Then I should see Lab Resultss data in soap note popup
     When I click on Save button to save SOAP NOTE
     Then I should see soap note saved message
@@ -41,11 +39,11 @@ Feature: Soap Note Creation from Schedule flow
     Then I should see soap note saved message
     When I click on three dots
     Then I should see Edit Soap Note option
+
     #* I should see Lab Resultss data in soap note popup
-    
     Examples: 
-      | LabResults |Patient          |
-      | A1C        |LAIRD, MICHAEL |
+      | LabResults | Patient        |
+      | A1C        | LAIRD, MICHAEL |
 
   Scenario: Verify deleting Scheduled Appointment
     When I click on schedule tab

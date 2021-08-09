@@ -14,5 +14,5 @@ Feature: Care Cordination Left Filters
 
     Examples: 
       | ServingFacility |
-      | Alpha Brovo Charlie    |
+      | Support Test Fac    |
       
