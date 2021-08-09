@@ -10,12 +10,12 @@
          <value>//*[@type = 'checkbox' and @name = '1613995292638' and @ref_element = 'Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/iframe_SignOut_appCCM']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@id='pwb_grid_data_picker_common']//div)[9]//label[contains(text(), 'Initial Patient Assessment')]//input</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#pwb_grid_data_picker_common > div.modal-dialog.modal-lg.ui-draggable > div > div.modal-body.no-padding > div > div.k-grid-content.k-auto-scrollable > table > tbody > tr:nth-child(7) > td:nth-child(1) > label > input</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//div[@id='pwb_grid_data_picker_common']//div)[9]//label[contains(text(), 'UTI')]//input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

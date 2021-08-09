@@ -246,7 +246,7 @@ class SD_SoapNotes {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_HRA/Obj_Add_HRA_Plus'))
 
-		Thread.sleep(5000)
+		Thread.sleep(16000)
 	}
 
 	@Then("I should see HRA popup with all tabs")

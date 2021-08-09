@@ -10,11 +10,11 @@
          <value>//span[@ref_element = 'Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_Close Popup/Obj_CCMFrame']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//span[contains(text(), 'Review concepts and goals of chronic case management program.')])[1]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>(//span[contains(text(), 'Is the patient an ACO or IAH patient?')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

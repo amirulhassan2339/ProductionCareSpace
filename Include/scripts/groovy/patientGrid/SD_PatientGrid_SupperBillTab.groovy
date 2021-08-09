@@ -49,6 +49,8 @@ public class SD_PatientGrid_SupperBillTab {
 
 		WebUI.enableSmartWait()
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/SupperBill/Obj_SupperBillMenu'))
+		
+		Thread.sleep(8000)
 
 		//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 

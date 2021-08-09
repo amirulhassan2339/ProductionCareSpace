@@ -722,9 +722,11 @@ class SD_BOPMR {
 	public void I_click_on_assessment() {
 
 
-		Thread.sleep(2000)
+		Thread.sleep(4000)
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_AssessmentTab'))
-	}
+	
+		Thread.sleep(3000)
+		}
 
 	@And("I click on add")
 	public void I_click_on_add() {
@@ -756,7 +758,7 @@ class SD_BOPMR {
 	public void I_checked_Cellulitis() {
 
 
-		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_CellulitisCheckbox'))
+		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_AsthmaCheckbox'))
 
 		Thread.sleep(2000)
 	}
@@ -849,23 +851,25 @@ class SD_BOPMR {
 		'Check assessment from Grid'
 		WebUI.check(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_AssessmentGrid_Checkbox1'))
 
-		WebUI.check(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_Checkbox2'))
+		//WebUI.check(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_Checkbox2'))
 	}
 
 	@When("I click on OK button")
 	public void I_click_on_OK_button() {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_AssessmentOK'))
-	}
+	
+		Thread.sleep(3000)
+		}
 
 	@When("I should see assessment data")
 	public void I_should_see_assessment_data() {
 
-		WebUI.scrollToElement(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_Decline'), 1)
+		WebUI.scrollToElement(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_Decline'), 2)
 
 		
 		String Actual_Answer = WebUI.getText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_Decline'))
-		WebUI.verifyEqual(Actual_Answer, 'Review concepts and goals of chronic case management program.')
+		WebUI.verifyEqual(Actual_Answer, 'Is the patient an ACO or IAH patient?')
 
 
 		//		String PublicTransport = WebUI.getText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Assessment_Validation/Obj_PublicTransport'))

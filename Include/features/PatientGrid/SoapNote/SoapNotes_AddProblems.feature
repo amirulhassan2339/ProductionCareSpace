@@ -27,12 +27,12 @@ Feature: Soap Note Creation from Schedule flow
     When I click on schedule tab
     Then I should see already scheduled appointment
     When I click on three dots
-    * I hover over on create soapnotes
-    * I click on based on patient medical record
-    #* I click on edit soapnotes
-    Then I should see <Patient> as patient
-    When I click on add Problems plus button
-    And I enter <ProblemsCode> as the problems code
+    #* I hover over on create soapnotes
+    #* I click on based on patient medical record
+    * I click on edit soapnotes
+    #Then I should see <Patient> as patient
+    * I click on add Problems plus button
+    * I enter <ProblemsCode> as the problems code
     * I enter <Problems_Start_Date> as problems start date
     * I click on saveclose button to save problems
     Then I should see problems data in soap note popup
