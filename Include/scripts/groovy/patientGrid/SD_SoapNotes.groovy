@@ -698,6 +698,8 @@ class SD_SoapNotes {
 		String Actual_Message = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_SOAPNoteSaved_Message'))
 
 		WebUI.verifyEqual(Actual_Message, "successSOAP Note SavedHide")
+		
+		Thread.sleep(4000)
 	}
 
 	@Then("I should see Edit Soap Note option")
