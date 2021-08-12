@@ -24,7 +24,7 @@ class SD_SoapNotes {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_ScheduleTab'), 15)
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_ScheduleTab'))
-		Thread.sleep(8000)
+		Thread.sleep(12000)
 	}
 
 	@And("I double click on screen to add appointment")
@@ -33,7 +33,7 @@ class SD_SoapNotes {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_DoubleClick_ScheduleAppointment'), 30)
 
 		WebUI.doubleClick(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_DoubleClick_ScheduleAppointment'))
-		Thread.sleep(3000)
+		Thread.sleep(6000)
 	}
 
 	@Then("I should see schedule appointment popup")
@@ -152,7 +152,7 @@ class SD_SoapNotes {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_Click_ThreeDots'), 10)
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_Click_ThreeDots'))
-		Thread.sleep(1000)
+		Thread.sleep(2000)
 	}
 
 	@Then("I click on delete appointment")
@@ -187,7 +187,7 @@ class SD_SoapNotes {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_EditSoapNotes'))
 
-		Thread.sleep(4000)
+		Thread.sleep(12000)
 	}
 
 	@And("I click on based on patient medical record")
@@ -197,7 +197,7 @@ class SD_SoapNotes {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_Click_BasedOnPatientMedicalRecord'), 5)
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_Click_BasedOnPatientMedicalRecord'))
 
-		Thread.sleep(4000)
+		Thread.sleep(12000)
 	}
 
 
@@ -237,7 +237,7 @@ class SD_SoapNotes {
 
 		WebUI.enableSmartWait()
 
-		Thread.sleep(12000)
+		Thread.sleep(16000)
 
 		WebUI.mouseOver(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_HRA/Obj_Add_HRA_Hover'))
 
@@ -246,7 +246,7 @@ class SD_SoapNotes {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Add_HRA/Obj_Add_HRA_Plus'))
 
-		Thread.sleep(16000)
+		Thread.sleep(20000)
 	}
 
 	@Then("I should see HRA popup with all tabs")

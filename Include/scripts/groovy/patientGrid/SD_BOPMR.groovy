@@ -84,7 +84,7 @@ class SD_BOPMR {
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPButtons/OR_CarePlanTab/span_Care Plan'))
 
 
-		Thread.sleep(6000)
+		Thread.sleep(16000)
 	}
 
 	@And("I click on add new care plan button")
@@ -108,7 +108,7 @@ class SD_BOPMR {
 
 			WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPButtons/OR_BasedOnPatientMedicalRecord/Obj_BasedOnPatientMedicalRecord'))
 
-			Thread.sleep(12000)
+			Thread.sleep(16000)
 		} else {
 			WebUI.takeFullPageScreenshot()
 		}
@@ -223,7 +223,7 @@ class SD_BOPMR {
 
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_buttonSaveClose'))
 
-		Thread.sleep(5000)
+		Thread.sleep(6000)
 	}
 
 	@Then("I should see success message (.*) of CP")
@@ -260,7 +260,7 @@ class SD_BOPMR {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_buttonSave'))
 
-		Thread.sleep(3000)
+		Thread.sleep(5000)
 	}
 
 
@@ -289,12 +289,12 @@ class SD_BOPMR {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_SaveApprove'))
 
-//		Thread.sleep(1000)
-//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_Review'))
-//
-//		Thread.sleep(1000)
-//
-//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_SaveApprove'))
+		Thread.sleep(1000)
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_Review'))
+
+		Thread.sleep(1000)
+
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_SaveApprove'))
 
 	}
 
@@ -339,7 +339,7 @@ class SD_BOPMR {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_Title/Obj_Title'))
 
-		Thread.sleep(3000)
+		Thread.sleep(6000)
 	}
 
 	@And("I should see patient data as read only")
@@ -445,12 +445,12 @@ class SD_BOPMR {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_buttonReject'))
 
-//		Thread.sleep(1000)
-//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_Review'))
-//
-//		Thread.sleep(1000)
-//
-//		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_buttonReject'))
+		Thread.sleep(1000)
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_button_Review'))
+
+		Thread.sleep(1000)
+
+		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/Obj_buttonReject'))
 
 
 	}

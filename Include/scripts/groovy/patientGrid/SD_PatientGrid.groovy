@@ -23,6 +23,7 @@ public class SD_PatientGrid {
 
 
 
+		
 
 		WebUI.waitForElementClickable(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'), 10)
 		WebUI.click(findTestObject('Object Repository/OR_HomePage/Obj_Enterprise'))
@@ -59,8 +60,9 @@ public class SD_PatientGrid {
 
 
 
-		Thread.sleep(2000)
-		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
+		Thread.sleep(16000)
+		//Thread.sleep(2000)
+		//WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 		WebUI.getUrl()
 
 		String ActualText = WebUI.getText(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
@@ -74,7 +76,7 @@ public class SD_PatientGrid {
 
 		//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 
-		Thread.sleep(3000)
+		Thread.sleep(10000)
 
 		WebUI.verifyElementPresent(findTestObject('Object Repository/OR_HomePage/Obj_Logo'), 3)
 

@@ -25,7 +25,7 @@ class SD_CareCordination_LeftFilters {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_CareCoordination'), 20)
 
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_CareCoordination'))
-		Thread.sleep(2000)
+		Thread.sleep(20000)
 	}
 
 
@@ -35,7 +35,7 @@ class SD_CareCordination_LeftFilters {
 		WebUI.waitForElementClickable(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_buttonReset'),20)
 
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_buttonReset'))
-		Thread.sleep(2000)
+		Thread.sleep(6000)
 	}
 
 	@And("I clear before and after dates")
@@ -78,7 +78,7 @@ class SD_CareCordination_LeftFilters {
 
 		WebUI.click(findTestObject('Object Repository/CareCordination_LeftFilters/OR_LeftFilters/LeftFiltersObjects/Obj_buttonApply'))
 
-		Thread.sleep(14000)
+		Thread.sleep(16000)
 	}
 
 

@@ -50,8 +50,8 @@ public class SD_PatientGrid_CareCoordination {
 
 
 
-		Thread.sleep(3000)
-		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
+		Thread.sleep(16000)
+		//WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 		WebUI.getUrl()
 
 		String ActualText = WebUI.getText(findTestObject('OR_LandingPage/OR_CMR/Obj_CMR'))
@@ -65,7 +65,7 @@ public class SD_PatientGrid_CareCoordination {
 
 		//		WebUI.click(findTestObject('OR_Alert/Obj_Hide'))
 
-		Thread.sleep(3000)
+		Thread.sleep(16000)
 
 		WebUI.verifyElementPresent(findTestObject('Object Repository/OR_HomePage/Obj_Logo'), 3)
 

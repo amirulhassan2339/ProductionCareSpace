@@ -54,7 +54,7 @@ public class SD_SaveNotes {
 	public void i_click_on_notes_tab() {
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/OR_Save/span_Notes'))
 	
-		Thread.sleep(4000)
+		Thread.sleep(10000)
 		}
 
 	@Then("I click on plus notes button")
