@@ -21,7 +21,7 @@ Feature: Search Patient
 
     Examples: 
       | Patient | Patient_Name   | MRN           | DOB        | Patient_Status |
-      | MICHAEL | LAIRD, MICHAEL | EFU9113150401 | 05/27/1950 | Active         |
+      | MICHAEL, LAI | LAIRD, MICHAEL | EFU9113150401 | 05/27/1950 | Active         |
 
   @SearchByLastNameANDFirstName
   Scenario Outline: Search Patient Using Last and First Name From Patient Grid

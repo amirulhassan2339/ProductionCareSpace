@@ -6,12 +6,12 @@
    <elementGuidId>ba694238-3f3b-4bc6-afd3-9213b1cb3843</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@ref_element = 'Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_Close Popup/Obj_CCMFrame']</value>
+         <key>XPATH</key>
+         <value>(//div[@class='k-animation-container']//div)[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//div[@class='k-animation-container']//div)[12]</value>
+         <key>BASIC</key>
+         <value>//*[@ref_element = 'Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_Close Popup/Obj_CCMFrame']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

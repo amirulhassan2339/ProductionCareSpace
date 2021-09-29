@@ -22,7 +22,7 @@ class SD_Schedule {
 	public void I_hover_over_on_Appointment() {
 
 		WebUI.mouseOver(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/SoapNotes/Obj_DoubleClick_ScheduleAppointment'))
-		Thread.sleep(2000)
+		Thread.sleep(3000)
 	}
 
 	@Then("I should see (.*) as VisitType")
@@ -30,6 +30,10 @@ class SD_Schedule {
 
 
 		WebUI.getAttribute(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_Tooltip_VisitTypeVerify'), VisitType)
+		
+//		String actual = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_Tooltip_VisitTypeVerify'));
+//		WebUI.verifyEqual(actual, VisitType)
+		
 
 
 		//		String actual_VisitTypeName = WebUI.getText(findTestObject('Object Repository/OR_PatientGrid/Schedule/Obj_Tooltip_VisitTypeVerify'))
