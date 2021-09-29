@@ -65,14 +65,14 @@ class SD_BOPMR {
 	@Then("I am on PWB with (.*)")
 	public void I_am_on_PWB(String Patient) {
 
-		//WebUI.verifyElementPresent(findTestObject('OR_PatientGrid/OR_SearchPatient/SearchPatientGrid/OR_Name/Obj_First_LastName'),3)		
-		
+		//WebUI.verifyElementPresent(findTestObject('OR_PatientGrid/OR_SearchPatient/SearchPatientGrid/OR_Name/Obj_First_LastName'),3)
+
 		String ActualName = WebUI.getText(findTestObject('OR_PatientGrid/OR_SearchPatient/SearchPatientGrid/OR_Name/Obj_First_LastName'))
 		WebUI.verifyEqual(ActualName, Patient)
-		
-		
-		
-		
+
+
+
+
 	}
 
 	@And("I click on care plan tab")
@@ -97,7 +97,38 @@ class SD_BOPMR {
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPButtons/OR_AddNewCarePlan/button_NewCarePlan'))
 
 	}
+	
+	
+	@And("I enter the (.*) as the assessmentcomment")
+	public void I_enter_AssessmentComment(String AssesmentComment) {
 
+
+		WebUI.setText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_textarea_select_notes'), AssesmentComment)
+	}
+	
+	@And("I enter (.*) as cpt code")
+	public void I_enter_CPTCode(String CPTCode) {
+
+
+		WebUI.setText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_input_CPTCode'),
+				CPTCode)
+		Thread.sleep(2000)
+	}
+
+
+	@And("I enter the (.*) as the assessmenttitle")
+	public void I_enter_assessmenttitle(String AssesmentTitle) {
+
+
+		WebUI.clearText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_input_title'))
+
+		Thread.sleep(1000)
+
+		WebUI.setText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_input_title'),
+				AssesmentTitle)
+		Thread.sleep(2000)
+	}
+	
 
 	@And("I click on basedonpatientmedicalrecord")
 	public void click_On_BasedOnPatientMedicalRecord() {
@@ -724,9 +755,9 @@ class SD_BOPMR {
 
 		Thread.sleep(4000)
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Assessment/OR_Assessment/Obj_AssessmentTab'))
-	
+
 		Thread.sleep(3000)
-		}
+	}
 
 	@And("I click on add")
 	public void I_click_on_add() {
@@ -858,16 +889,16 @@ class SD_BOPMR {
 	public void I_click_on_OK_button() {
 
 		WebUI.click(findTestObject('Object Repository/OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_AssessmentOK'))
-	
+
 		Thread.sleep(3000)
-		}
+	}
 
 	@When("I should see assessment data")
 	public void I_should_see_assessment_data() {
 
 		WebUI.scrollToElement(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_Decline'), 2)
 
-		
+
 		String Actual_Answer = WebUI.getText(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/OR_CPGrid_Buttons/ComponentSetting/Component_Validation/AssessmentSelection/Obj_Decline'))
 		WebUI.verifyEqual(Actual_Answer, 'Is the patient an ACO or IAH patient?')
 

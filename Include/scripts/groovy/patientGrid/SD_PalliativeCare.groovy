@@ -20,10 +20,9 @@ public class SD_PalliativeCare {
 
 		Thread.sleep(3000)
 		WebUI.click(findTestObject('OR_PatientGrid/OR_PatientData/OR_NonClinicalSection/OR_CarePlan/Notes/Forms/PalliativeCareForm/Obj_FormsBtn'))
-	
+
 		Thread.sleep(6000)
-		
-		}
+	}
 
 	@And("I click on palliative care")
 	public void I_click_on_palliative_care() {

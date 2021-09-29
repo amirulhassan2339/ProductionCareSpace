@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Soliton@123'</initValue>
+      <initValue>'Soliton1'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
